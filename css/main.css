@@ -96,3 +96,7 @@ footer {
     margin-top: 15px;
     padding: 5px;
 }
+.name-color {
+    color: #365899!important;
+    font-weight:bold;
+}
