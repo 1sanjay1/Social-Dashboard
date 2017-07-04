@@ -22,7 +22,7 @@ footer {
     height: 600px;
 }
 #sidebar {
-    background: ;
+    background: silver;
 }
 #header {
     background-color: #29487d;
@@ -83,4 +83,16 @@ footer {
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
     background: #29487d;
     color: white;
+}
+.comment {
+    margin: 0;
+}
+.comment-image {
+    height: 32px;
+    width: 32px;
+}
+.add-comment {
+    width: 100%;
+    margin-top: 15px;
+    padding: 5px;
 }

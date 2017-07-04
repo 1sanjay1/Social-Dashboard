@@ -98,7 +98,7 @@
             <!------------------------------------- main content ------------------------------------------------------->
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="hidden-xs col-sm-4 col-md-3">
                         <div id="menu">
                             <ul class="nav nav-pills nav-stacked">
                               <li role="presentation"><a href="#">Sanjay</a></li>
@@ -121,8 +121,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                    <div id="main">
+                    <div class="col-xs-12 col-sm-8 col-md-6">
+                        <div id="main">
                         
                         <!------ First Post ( Text Post) ----------------------------------->
                         <div class="panel panel-default">
@@ -137,7 +137,43 @@
                                 <span><span class="glyphicon glyphicon-share" aria-hidden="true"></span><a href="#">Share</a></span>
                             </div>
                           </div>
-                          <div class="panel-footer">Panel footer</div>
+                          <div class="panel-footer">
+                              
+<!--                            first comment        -->
+                            <div class="media">
+                              <div class="media-left">
+                                <a href="#">
+                                  <img class="media-object comment-image" src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p100x100/11885393_797926940306426_4095247326765212349_n.jpg?oh=715136f7567d3e8e961d4c9b491fb96c&oe=5A0611DC" alt="...">
+                                </a>
+                              </div>
+                              <div class="media-body">
+                                <p class="comment"> <span><a href="#">Abhishek Verma </a></span> Wow, that's really insightful! </p>
+                                <div> 
+                                    <small> 
+                                        <span> <a href="#">Like </a></span> <span> <a href="#">Comment </a></span> 
+                                    </small> 
+                                </div>
+                              </div>
+                            </div>
+                              
+<!--                            second comment-->
+                            <div class="media">
+                              <div class="media-left">
+                                <a href="#">
+                                  <img class="media-object comment-image" src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/c0.0.100.100/p100x100/19657138_756198377883136_4593537813376163139_n.jpg?oh=75f02f14b5cd97ce317a2d081a66fadd&oe=5A0E28BF" alt="...">
+                                </a>
+                              </div>
+                              <div class="media-body">
+                                <p class="comment"> <span><a href="#">Shubham Panwar </a></span> Wow, that's really insightful! </p>
+                                <div> 
+                                    <small> 
+                                        <span> <a href="#">Like </a></span> <span> <a href="#">Comment </a></span> 
+                                    </small> 
+                                </div>
+                              </div>
+                            </div>
+                            <input placeholder="Write a comment..." class="add-comment">
+                          </div>
                         </div>
                         
                         <!------ Second Post (Quote Post) ------------------------------------>
@@ -220,11 +256,23 @@
                         
                     </div>
                 </div>
-                    <div class="col-md-3">
-                        <div id="sidebar"></div>
+                <div class="hidden-xs hidden-sm col-md-3">
+                    <div id="sidebar">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#top" aria-controls="home" role="tab" data-toggle="tab">Top Trends</a></li>
+                            <li role="presentation"><a href="#politics" aria-controls="profile" role="tab" data-toggle="tab">Politics</a></li>
+                            <li role="presentation"><a href="#sports" aria-controls="messages" role="tab" data-toggle="tab">Sport</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="top">1</div>
+                            <div role="tabpanel" class="tab-pane" id="politics">2</div>
+                            <div role="tabpanel" class="tab-pane" id="sports">3</div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
             <!--------------------------------------------------------------------------------------------------------------------------------------------------- Endinf of main content ------------------------------------------------------------------------------------------------------------------------------------------------------------>
             
             <!-------------------------------------- starting of footer ----------------------------------------------->
