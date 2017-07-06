@@ -21,6 +21,9 @@ footer {
 #sidebar {
     height: 600px;
 }
+#main {
+    height: 85vh;
+}
 #sidebar {
     background: silver;
 }
@@ -37,7 +40,7 @@ footer {
 }
 #header ul .glyphicon,.caret {
     font-size: 20px;
-    color: black;
+    color: white;
 }
 .list-heading {
     padding: 20px 15px 0 15px;
@@ -99,4 +102,10 @@ footer {
 .name-color {
     color: #365899!important;
     font-weight:bold;
+}
+#search-icon {
+    margin-left: -10px; 
+    border:0; 
+    height: 25px;
+    background: #f4f4f4;
 }
