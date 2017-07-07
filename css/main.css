@@ -100,6 +100,12 @@ footer {
     margin-top: 15px;
     padding: 5px;
 }
+.nested-comment-1 {
+    margin-left: 10%;
+}
+.nested-comment-2 {
+    margin-left: 20%;
+}
 .name-color {
     color: #365899!important;
     font-weight:bold;
@@ -121,11 +127,12 @@ footer {
     font-weight: bold;
     color: #4f4f4f;
 }
-#menu > ul li:hover {
-    background: yellow!important;
+#menu ul {
+    position: relative;
 }
-#menu a:hover {
-    background: yellow;
+#menu .badge {
+    position: absolute;
+    right: 30%;
 }
 
 /**** Style the right sidebar *****/
