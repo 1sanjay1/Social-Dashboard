@@ -10,6 +10,7 @@
         <!-- Bootstrap -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Metal+Mania|Open+Sans|Quicksand|Roboto|Tangerine" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet">
 
     </head>
@@ -120,7 +121,7 @@
                             <div class="icon-margin"> 
                                 <span><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span><a href="#" >Like</a></span>
                                 <span><span class="glyphicon glyphicon-comment" aria-hidden="true"></span><a href="#">Comment</a></span>
-                                <span><span class="glyphicon glyphicon-share" aria-hidden="true"></span><a href="#">Share</a></span>
+                                <span><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span><a href="#">Share</a></span>
                             </div>
                           </div>
                           <div class="panel-footer">
@@ -208,7 +209,7 @@
                             <div class="icon-margin"> 
                                 <span><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span><a href="#">Like</a></span>
                                 <span><span class="glyphicon glyphicon-comment" aria-hidden="true"></span><a href="#">Comment</a></span>
-                                <span><span class="glyphicon glyphicon-share" aria-hidden="true"></span><a href="#">Share</a></span>
+                                <span><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span><a href="#">Share</a></span>
                             </div>
                           </div>
                           <div class="panel-footer">Panel footer</div>
@@ -226,7 +227,7 @@
                             <div class="icon-margin"> 
                                 <span><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span><a href="#">Like</a></span>
                                 <span><span class="glyphicon glyphicon-comment" aria-hidden="true"></span><a href="#">Comment</a></span>
-                                <span><span class="glyphicon glyphicon-share" aria-hidden="true"></span><a href="#">Share</a></span>
+                                <span><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span><a href="#">Share</a></span>
                             </div>
                           </div>
                           <div class="panel-footer">Panel footer</div>
@@ -244,7 +245,7 @@
                             <div class="icon-margin"> 
                                 <span><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span><a href="#">Like</a></span>
                                 <span><span class="glyphicon glyphicon-comment" aria-hidden="true"></span><a href="#">Comment</a></span>
-                                <span><span class="glyphicon glyphicon-share" aria-hidden="true"></span><a href="#">Share</a></span>
+                                <span><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span><a href="#">Share</a></span>
                             </div>
                           </div>
                           <div class="panel-footer">Panel footer</div>
@@ -265,7 +266,7 @@
                             <div class="icon-margin"> 
                                 <span><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span><a href="#">Like</a></span>
                                 <span><span class="glyphicon glyphicon-comment" aria-hidden="true"></span><a href="#">Comment</a></span>
-                                <span><span class="glyphicon glyphicon-share" aria-hidden="true"></span><a href="#">Share</a></span>
+                                <span><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span><a href="#">Share</a></span>
                             </div>
                           </div>
                           <div class="panel-footer">Panel footer</div>
@@ -274,26 +275,159 @@
                     </div>
                 </div>
                 <div class="hidden-xs hidden-sm col-md-3">
-                    <div id="sidebar">
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation" class="active"><a href="#top" aria-controls="home" role="tab" data-toggle="tab">Top Trends</a></li>
-                            <li role="presentation"><a href="#politics" aria-controls="profile" role="tab" data-toggle="tab">Politics</a></li>
-                            <li role="presentation"><a href="#sports" aria-controls="messages" role="tab" data-toggle="tab">Sport</a></li>
-                        </ul>
-                        <!-- Tab panes -->
-                        <div class="tab-content">
-                            <div role="tabpanel" class="tab-pane active" id="top">1</div>
-                            <div role="tabpanel" class="tab-pane" id="politics">2</div>
-                            <div role="tabpanel" class="tab-pane" id="sports">3</div>
+                    
+                    <!----- alert box to show birthday date --------------------->
+                    <div class="alert alert-info" id="alert-info">
+                        <li style="list-style: none;"><i class="fa fa-birthday-cake" aria-hidden="true" style="color: red;"></i>
+                        <a href="#" class="name-color">Abhishek Verma's</a> birthday is today</li>
+                    </div>
+                    
+                    <div id="sidebar" style="position: relative; background: white;width: auto;height: 50px;">
+                        <div id="tranding" >
+                            <span>Tranding</span>
+                            <div id="rightsideicon">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation"><a href="#top" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-bar-chart-o" aria-hidden="true" title="top trands"></i></a></li>
+                                    <li role="presentation"><a href="#politics" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-bank" aria-hidden="true" title="politics"></i></a></li>
+                                    <li role="presentation"><a href="#science" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-rocket" aria-hidden="true" title="science" ></i></a></li>
+                                    <li role="presentation"><a href="#sports" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-soccer-ball-o" aria-hidden="true" title="sports"></i></a></li>
+                                    <li role="presentation"><a href="#entertainment" aria-controls="profile" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-film" aria-hidden="true" title="entertainment"></span></a></li>
+                                </ul>
+                            </div>
+                            <!-- Tab panes -->
+                            <div class="tab-content" style="background: white;">
+                                <div role="tabpanel" class="tab-pane active" id="top">
+                                    <ul>
+                                        <li>
+                                            <span><i class="glyphicon glyphicon-flash"></i><a href="#">Narendra Modi</a></span>
+                                            <p>India will implement Paris climate agreement: PM Modi at G20</p>
+                                        </li>
+                                        <li>
+                                            <span><i class="glyphicon glyphicon-flash"></i><a href="#">Narendra Modi</a></span>
+                                            <p>India will implement Paris climate agreement: PM Modi at G20</p>
+                                        </li>
+                                        <li>
+                                            <span><i class="glyphicon glyphicon-flash"></i><a href="#">Narendra Modi</a></span>
+                                            <p>India will implement Paris climate agreement: PM Modi at G20</p>
+                                        </li>
+                                        <li>
+                                            <span><i class="glyphicon glyphicon-flash"></i><a href="#">Narendra Modi</a></span>
+                                            <p>India will implement Paris climate agreement: PM Modi at G20</p>
+                                        </li>
+                                        <li>
+                                            <span><i class="glyphicon glyphicon-flash"></i><a href="#">Narendra Modi</a></span>
+                                            <p>India will implement Paris climate agreement: PM Modi at G20</p>
+                                        </li>
+                                        <li>
+                                            <span><i class="glyphicon glyphicon-flash"></i><a href="#">Narendra Modi</a></span>
+                                            <p>India will implement Paris climate agreement: PM Modi at G20</p>
+                                        </li>
+                                        <li>
+                                            <span><i class="glyphicon glyphicon-flash"></i><a href="#">Narendra Modi</a></span>
+                                            <p>India will implement Paris climate agreement: PM Modi at G20</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                
+                                <div role="tabpanel" class="tab-pane" id="politics">
+                                    <ul>
+                                        <li>
+                                            <span><i class="glyphicon glyphicon-flash"></i><a href="#">Narendra Modi</a></span>
+                                            <p>India will implement Paris climate agreement: PM Modi at G20</p>
+                                        </li>
+                                        <li>
+                                            <span><i class="glyphicon glyphicon-flash"></i><a href="#">Narendra Modi</a></span>
+                                            <p>India will implement Paris climate agreement: PM Modi at G20</p>
+                                        </li>
+                                        <li>
+                                            <span><i class="glyphicon glyphicon-flash"></i><a href="#">Narendra Modi</a></span>
+                                            <p>India will implement Paris climate agreement: PM Modi at G20</p>
+                                        </li>
+                                        <li>
+                                            <span><i class="glyphicon glyphicon-flash"></i><a href="#">Narendra Modi</a></span>
+                                            <p>India will implement Paris climate agreement: PM Modi at G20</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="science">
+                                    <ul>
+                                        <li>
+                                            <span><i class="glyphicon glyphicon-flash"></i><a href="#">Narendra Modi</a></span>
+                                            <p>India will implement Paris climate agreement: PM Modi at G20</p>
+                                        </li>
+                                        <li>
+                                            <span><i class="glyphicon glyphicon-flash"></i><a href="#">Narendra Modi</a></span>
+                                            <p>India will implement Paris climate agreement: PM Modi at G20</p>
+                                        </li>
+                                        <li>
+                                            <span><i class="glyphicon glyphicon-flash"></i><a href="#">Narendra Modi</a></span>
+                                            <p>India will implement Paris climate agreement: PM Modi at G20</p>
+                                        </li>
+                                        <li>
+                                            <span><i class="glyphicon glyphicon-flash"></i><a href="#">Narendra Modi</a></span>
+                                            <p>India will implement Paris climate agreement: PM Modi at G20</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <!----------- Sport Trands Post --------------------------------------->
+                                <div role="tabpanel" class="tab-pane" id="sports">
+                                    <ul>
+                                        <li>
+                                            <span><i class="glyphicon glyphicon-flash"></i><a href="#">Narendra Modi</a></span>
+                                            <p>India will implement Paris climate agreement: PM Modi at G20</p>
+                                        </li>
+                                        <li>
+                                            <span><i class="glyphicon glyphicon-flash"></i><a href="#">Narendra Modi</a></span>
+                                            <p>India will implement Paris climate agreement: PM Modi at G20</p>
+                                        </li>
+                                        <li>
+                                            <span><i class="glyphicon glyphicon-flash"></i><a href="#">Narendra Modi</a></span>
+                                            <p>India will implement Paris climate agreement: PM Modi at G20</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <!---------- Entertainment Trands Post ------------------------------------->
+                                <div role="tabpanel" class="tab-pane" id="entertainment">
+                                    <ul>
+                                        <li>
+                                            <span><i class="glyphicon glyphicon-flash"></i><a href="#">Narendra Modi</a></span>
+                                            <p>India will implement Paris climate agreement: PM Modi at G20</p>
+                                        </li>
+                                        <li>
+                                            <span><i class="glyphicon glyphicon-flash"></i><a href="#">Narendra Modi</a></span>
+                                            <p>India will implement Paris climate agreement: PM Modi at G20</p>
+                                        </li>
+                                        <li>
+                                            <span><i class="glyphicon glyphicon-flash"></i><a href="#">Narendra Modi</a></span>
+                                            <p>India will implement Paris climate agreement: PM Modi at G20</p>
+                                        </li>
+                                        <li>
+                                            <span><i class="glyphicon glyphicon-flash"></i><a href="#">Narendra Modi</a></span>
+                                            <p>India will implement Paris climate agreement: PM Modi at G20</p>
+                                        </li>
+                                        <li>
+                                            <span><i class="glyphicon glyphicon-flash"></i><a href="#">Narendra Modi</a></span>
+                                            <p>India will implement Paris climate agreement: PM Modi at G20</p>
+                                        </li>
+                                        <li>
+                                            <span><i class="glyphicon glyphicon-flash"></i><a href="#">Narendra Modi</a></span>
+                                            <p>India will implement Paris climate agreement: PM Modi at G20</p>
+                                        </li>
+                                        <li>
+                                            <span><i class="glyphicon glyphicon-flash"></i><a href="#">Narendra Modi</a></span>
+                                            <p>India will implement Paris climate agreement: PM Modi at G20</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
-            
-        <div id="right-sidebar">
-            this is awesome
-        </div>
+        
             <!--------------------------------------------------------------------------------------------------------------------------------------------------- Endinf of main content ------------------------------------------------------------------------------------------------------------------------------------------------------------>
             
             <!-------------------------------------- starting of footer ----------------------------------------------->
@@ -313,6 +447,12 @@
             </div>
             <!--------------------------------------- Ending of footer ------------------------------------------------->
         
+            
+            <!--------------------------------------- Right Side bar for friend list ----------------------------------->
+            <div id="right-sidebar">
+                this is awesome
+            </div>
+            
         </div>
 
 
