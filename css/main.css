@@ -25,7 +25,7 @@ footer {
 #main {
     /*height: 85vh;*/
 }
-#sidebar,#right-sidebar {
+#sidebar {
     background: #ffffff;
 }
 #header {
@@ -158,7 +158,7 @@ footer {
     right: 0px;
     height: 600vh; 
     max-width: 300px; 
-    padding: 20px;
+    border-left: 1px solid silver;
 }
 
 /*********  Style the top Trands **************/
@@ -273,6 +273,7 @@ footer {
 /* After top trands ****/
 .game-image {
     width: 50%;
+    border-radius: 2px;
 }
 .segestedPost {
     background: white;
@@ -290,4 +291,66 @@ footer {
 }
 #fixed {
     position: relative;
+}
+
+/*Style the friend list part*/
+#top-right,#bottom-right {
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    width: 250px;
+    margin-bottom: 5px;
+}
+
+#top-right {
+    display: flex;
+    border-bottom: 1px solid silver;
+}
+#top-right div {
+    height: 50px;
+    width: 80px;
+    padding-left: 10px;
+    margin-left: 8px;
+}
+#right-sidebar #top-right img {
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: auto;
+    border-radius: 10px;
+}
+#right-sidebar li {
+    position: relative;
+}
+#right-sidebar .green {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgb(0,200,0);
+    position: absolute;
+    right: 10px;
+    top: 28px;
+}
+#middle-right {
+    height: 78vh;
+    margin-bottom: 40px;
+    overflow: auto;
+}
+#middle-right::-webkit-scrollbar {
+    display: none;
+}
+#middle-right .nav li a{
+    font-size: 14px;
+    color: #4f4f4f;
+}
+#bottom-right {
+    position: fixed;
+    bottom: 0;
+    height: 30px;
+}
+#bottom-right input {
+    width: 100%;
+    padding: 7px;
+    border: 0;
+    font-size: 15px;
 }
