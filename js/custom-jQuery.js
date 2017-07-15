@@ -21,3 +21,52 @@ $( window ).resize(function(event) {
 	}
 
 });
+
+
+//show more tab in right-sidebar after clicking 
+$('#tab-content-id #top ul li.see-more a').on('click',function(){
+    $('#tab-content-id #top ul li.see-more').remove();
+    $('#tab-content-id #top ul li').removeClass('disappear');
+});
+$('#tab-content-id #politics ul li.see-more a').on('click',function(){
+    $('#tab-content-id #politics ul li.see-more').remove();
+    $('#tab-content-id #politics ul li').removeClass('disappear');
+});
+$('#tab-content-id #science ul li.see-more a').on('click',function(){
+    $('#tab-content-id #science ul li.see-more').remove();
+    $('#tab-content-id #science ul li').removeClass('disappear');
+});
+$('#tab-content-id #sports ul li.see-more a').on('click',function(){
+    $('#tab-content-id #sports ul li.see-more').remove();
+    $('#tab-content-id #sports ul li').removeClass('disappear');
+});
+$('#tab-content-id #entertainment ul li.see-more a').on('click',function(){
+    $('#tab-content-id #entertainment ul li.see-more').remove();
+    $('#tab-content-id #entertainment ul li').removeClass('disappear');
+});
+
+//fixed suggested posts container after scrolling 
+
+       
+
+//var offset = $('#fixed').offset();
+//$(window).scroll(function() {                  
+//    var fixmeTop = offset.top;
+//    var left = offset.left;
+//    
+//    var currentScroll = $(window).scrollTop();
+//
+//    if (currentScroll + 58 >= fixmeTop) {           
+//        $('#fixed').css({                      
+//            position: 'fixed',
+//            top: '0',
+//            marginTop: '58',
+//            left: left
+//        });
+//    } else {                                  
+//        $('#fixed').css({                     
+//            position: 'static'
+//        });
+//    }
+//
+//});

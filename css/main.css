@@ -163,9 +163,8 @@ footer {
 
 /*********  Style the top Trands **************/
 #rightsideicon {
-    position: absolute; 
-    top: 5px; 
-    left: 30%;
+/*    position: absolute; */
+    
 }
 #tranding {
     position: relative;
@@ -176,28 +175,56 @@ footer {
     top: 5px;
     left: 5px;
     color: #90949c;
+    font-size: 13px;
     font-weight: bold;
 }
 #tranding > span {
-    margin-top: 10px;
+    margin-top: 8px;
+    margin-bottom: 2px;
 }
 #tranding > #rightsideicon > ul li,
 #tranding > #rightsideicon ul li i {
     width: 30px;
+    margin-right: 3px;
 }
-#rightsideicon > .nav > li > a {
-    border: 1px solid #ffffff;
+#rightsideicon > .nav > li > a, 
+#rightsideicon .nav.nav-tabs {
+    border: 1px solid transparent;
+}
+#sidebar,
+#tranding,
+#rightsideicon,
+#rightsideicon .nav.nav-tabs{
+    border-radius: 3px;
 }
 #rightsideicon > .nav > li > a:hover,
 #rightsideicon > .nav > li > a:focus {
     text-decoration: none;
     background-color: transparent;
-    border: 1px solid #ffffff !important;
 }
-.tab-content {
+.tab-cotent {
     position: absolute; 
     top: 50px; 
     left: 5px;
+}
+#tab-content-id {
+    margin-top: 15px; 
+    padding-bottom: 5px;
+}
+
+/*see more options*/
+#tab-content-id ul li.see-more > span {
+    padding-left: 5px;
+}
+#tab-content-id ul li.see-more > span > span, 
+#see-more-games > span > span {
+    color: skyblue;
+}
+#see-more-games{
+    list-style: none;
+}
+#see-more-games > span a{
+   margin-left: 10px;
 }
 .tab-content > .tab-pane > ul,
 .tab-content > .tab-pane > ul > li {
@@ -216,10 +243,17 @@ footer {
 .tab-content > .tab-pane > ul > li .glyphicon {
     color: skyblue;
 }
+.disappear  {
+    display: none;
+}
+
 #alert-info {
     background: #ffffff;
     color: #90949c;
     font-size: 12px;
+    border: 0;
+    border-radius: 2px;
+    margin-bottom: 10px;
 }
 #alert-info a {
     text-decoration: none;
@@ -234,4 +268,26 @@ footer {
     background: #f4f4f4;
     padding: 3px;
     border-radius: 2px;
+}
+
+/* After top trands ****/
+.game-image {
+    width: 50%;
+}
+.segestedPost {
+    background: white;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+/**** segested post slider ****/
+#tranding #mySlider div > div{
+    height: 100%;
+}
+#tranding #mySlider .item img {
+    width: 100%;
+    height: 400px;
+}
+#fixed {
+    position: relative;
 }
