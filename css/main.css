@@ -11,6 +11,7 @@ html,body {
     width: 100%;
     font-family: sans-serif;
     background-color: #e9ebee;
+    font-size: 12px;
 }
 footer {
     margin-top: 16px;
@@ -19,10 +20,10 @@ footer {
 #main,
 #menu,
 #right-sidebar {
-    height: 600px;
+    /*height: 600px;*/
 }
 #main {
-    height: 85vh;
+    /*height: 85vh;*/
 }
 #sidebar,#right-sidebar {
     background: #ffffff;
@@ -131,7 +132,18 @@ footer {
 }
 #menu .badge {
     position: absolute;
-    right: 30%;
+    left: 110px;
+}
+#menu #nav-pills-stacked {
+    margin-right: 20px;
+}
+#menu #nav-pills-stacked li,#menu #nav-pills-stacked li a {
+    height: 30px;
+    padding: 5px;
+}
+#menu #nav-pills-stacked li a:hover {
+    margin-right: 20px;
+    background-color: #f4f4ff;
 }
 
 /**** Style the right sidebar *****/
