@@ -292,11 +292,34 @@ footer {
     width: 100%;
     height: 400px;
 }
-#fixed {
-    position: relative;
+#fixed-sidebar {
+    top: 58px;
 }
 
+@media only screen and (min-width: 1200px ) {
+    #fixed-sidebar {
+        width: 262.5px;
+    }
+    #fixed-sidebar.affix {
+        width: 262.5px!important;
+    }
+}
+@media only screen and (max-width: 1199px ) {
+    #fixed-sidebar {
+        width: 212.5px;
+    }
+    #fixed-sidebar.affix {
+        width: 212.5px!important;
+    }
+}
 /*Style the friend list part*/
+
+@media only screen and (max-width: 991px ) {
+    #right-sidebar {
+        display: none;
+    }
+}
+
 #top-right,#bottom-right {
     margin: 0;
     padding: 0;
@@ -367,3 +390,8 @@ footer {
     padding: 3px;
     padding-left: 10px;
 } 
+#suggested-page-button {
+    padding: 2px;
+    margin-left: 10px;
+    border-radius: 0;
+}
