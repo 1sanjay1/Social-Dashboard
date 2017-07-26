@@ -114,15 +114,15 @@ footer {
     font-weight:bold;
 }
 #search-icon {
-    margin-left: -10px; 
-    border:0; 
+    margin-left: -10px;
+    border:0;
     height: 25px;
     background: #f4f4f4;
 }
 
 /****  Style the Sidebar *******/
 .sidebar-icon {
-    max-height: 20px; 
+    max-height: 20px;
     max-width: 20px;
     margin-right: 5px;
 }
@@ -156,18 +156,18 @@ footer {
     }
 }
 #right-sidebar {
-    position: fixed; 
-    top: 56px; 
+    position: fixed;
+    top: 56px;
     right: 0px;
-    height: 600vh; 
-    max-width: 300px; 
+    height: 600vh;
+    max-width: 300px;
     border-left: 1px solid silver;
 }
 
 /*********  Style the top Trands **************/
 #rightsideicon {
 /*    position: absolute; */
-    
+
 }
 #tranding {
     position: relative;
@@ -190,7 +190,7 @@ footer {
     width: 30px;
     margin-right: 3px;
 }
-#rightsideicon > .nav > li > a, 
+#rightsideicon > .nav > li > a,
 #rightsideicon .nav.nav-tabs {
     border: 1px solid transparent;
 }
@@ -206,12 +206,12 @@ footer {
     background-color: transparent;
 }
 .tab-cotent {
-    position: absolute; 
-    top: 50px; 
+    position: absolute;
+    top: 50px;
     left: 5px;
 }
 #tab-content-id {
-    margin-top: 15px; 
+    margin-top: 15px;
     padding-bottom: 5px;
 }
 
@@ -219,7 +219,7 @@ footer {
 #tab-content-id ul li.see-more > span {
     padding-left: 5px;
 }
-#tab-content-id ul li.see-more > span > span, 
+#tab-content-id ul li.see-more > span > span,
 #see-more-games > span > span {
     color: skyblue;
 }
@@ -389,9 +389,14 @@ footer {
 #middle-right .nav-pills li a {
     padding: 3px;
     padding-left: 10px;
-} 
+}
 #suggested-page-button {
     padding: 2px;
     margin-left: 10px;
     border-radius: 0;
 }
+
+/*to implement slow motion fadein of dropdown-menu */
+ul.dropdown-menu#slow-motion-dropdown {list-style-type: none; }
+
+ul.dropdown-menu#slow-motion-dropdown li {display:none;}
