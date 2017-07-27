@@ -20,28 +20,51 @@
     </head>
     <body>
 
-        <div class="container-fluid">
+        <div class="container-fluid" id="outer-container">
 
-            <div class="row" style="position: fixed; width: 100%; z-index: 99;">
+            <div class="row"  id="first-row" style="position: ; width: 100%; z-index: 99;">
                 <!-- --------------------- starting of Header --------------------------------------------------- -->
                 <header>
                     <nav class="navbar navbar-default" id="header">
                       <div class="container">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
+
+                           <form class="navbar-form navbar-left visible-xs" style="margin: 0; padding: 5px; width: 100%;">
+                            <div class="form-group">
+                                <input size="" type="text" class="form-control" placeholder="Search" style="width: 100%;border: 0; height: 25px; display: flex;">
+
+                                <!-- <button id="search-icon" class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search" style="font-size: 15px; display:flex;"></i></button> -->
+                             </div>
+                          </form>
+
                           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                             <span class="sr-only"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                           </button>
-                          <a class="navbar-brand white-text"  href="#"><img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7b5gwVQtBajo9xDmr4doICszrzsDAGL4tpenZiVWgJEA75KObkw" style="height: 25px; width: 20px;"></a>
+
+
+
+                          <ul class="nav navbar-nav navbar-right visible-xs" style="display: inline-block; width: 100%; padding-left: 10px;font-size: 10px;">
+                            <li style="display: inline-block;"><a href="#" class="white-text"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+                            <li style="display: inline-block;"><a href="#" class="white-text"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                </a></li>
+                            <li style="display: inline-block;"><a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></li>
+                            <li style="display: inline-block;"><a href="#"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></a></li>
+                            <li style="display: inline-block;"><a href="#"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a></li>
+                          </ul>
+
+
+
+                          <a class="navbar-brand white-text hidden-xs"  href="#"><img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7b5gwVQtBajo9xDmr4doICszrzsDAGL4tpenZiVWgJEA75KObkw" style="height: 25px; width: 20px;"></a>
                         </div>
 
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-                          <form class="navbar-form navbar-left" style="padding-top: 15px; margin-top: 0px; padding-left: 0px;">
+                          <form class="navbar-form navbar-left hidden-xs" style="padding-top: 15px; margin-top: 0px; padding-left: 0px;">
                             <div class="form-group">
                                 <input size="50" type="text" class="form-control" placeholder="Search" style="border: 0; height: 25px;">
 
@@ -50,9 +73,16 @@
                           </form>
 
 
-                          <ul class="nav navbar-nav navbar-right hidden-sm">
-                            <li ><a style="padding-right: 0px; padding-top: 10px;" href="#" class="white-text"><span  aria-hidden="true"><img src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p160x160/14192003_1814925095393068_7427285130782567050_n.jpg?oh=0da31da3b089a6d05e3a212ca07275cc&oe=59D98161" style="height: 30px; width: 30px;"></span></a></li>
-                            <li><a href="#" class="white-text" style="font-weight: bold;">Sanjay</a></li>
+                          <!-- show this list except mobile device -->
+                          <ul class="nav navbar-nav navbar-right hidden-xs">
+                            <li >
+                              <a style="padding-right: 0px; padding-top: 10px;" href="#" class="white-text">
+                                <span  aria-hidden="true">
+                                  <img src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p160x160/14192003_1814925095393068_7427285130782567050_n.jpg?oh=0da31da3b089a6d05e3a212ca07275cc&oe=59D98161" style="height: 30px; width: 30px;">
+
+                              </a>
+                            </li>
+                            <li><a href="#" class="white-text hidden-xs" style="font-weight: bold;">Sanjay</a></li>
                             <li><a href="#" class="white-text"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
                             <li><a href="#" class="white-text"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
                                 </a></li>
@@ -77,6 +107,38 @@
                               </ul>
                             </li>
                           </ul>
+
+
+                          <!-- show this list in case of mobile divices -->
+                          <ul class="nav navbar-nav navbar-right visible-xs" style="font-size: 12px">
+                            <li >
+                              <a style="padding-right: 0px;" href="#" class="white-text mobile-dropdown">
+                                <span  aria-hidden="true">
+                                  <img src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p160x160/14192003_1814925095393068_7427285130782567050_n.jpg?oh=0da31da3b089a6d05e3a212ca07275cc&oe=59D98161" style="height: 30px; width: 30px;">
+                                  <span class="hidden-sm hidden-md hidden-lg" style="margin-left: 10px; font-weight: bold; font-size: 15px;">Sanjay</span>
+                                </span>
+                              </a>
+                            </li>
+
+                            <li class="divider">FAVORITES</li>
+
+                            <li><a href="#" class="white-text"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Most Recent</a></li>
+                            <li><a href="#" class="white-text"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Messenger
+                                </a></li>
+                            <li><a href="#" class="white-text"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Events</a></li>
+                            <li><a href="#" class="white-text"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Pages</a></li>
+                            <li><a href="#" class="white-text"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Find Friends</a></li>
+                            <li><a href="#" class="white-text"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Instagram</a></li>
+
+                            <li class="divider">Apps</li>
+
+                            <li><a href="#" class="white-text"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Teen Patti</a></li>
+                            <li><a href="#" class="white-text"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Friends</a></li>
+                            <li><a href="#" class="white-text"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Notifications</a></li>
+                            <li><a href="#" class="white-text"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Photos</a></li>
+                            <li><a href="#" class="white-text"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Games</a></li>
+                          </ul>
+
                         </div><!-- /.navbar-collapse -->
                       </div><!-- /.container-fluid -->
                     </nav>
@@ -87,7 +149,7 @@
 
 
             <!------------------------------------- main content ----------------------------------------------------- -->
-            <div class="container" style="position: relative; top: 70px;">
+            <div class="container" style="position: relative;" id="middle-news-container">
                 <div class="row">
 
                     <div class="hidden-xs col-sm-4 col-md-2 affix" style="width: 200px;">

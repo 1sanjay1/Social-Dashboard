@@ -58,6 +58,9 @@ footer {
 .image-post {
     margin-bottom: 15px;
 }
+.divider {
+    height: 20px; padding-left: 5px; padding-top: 3px; background: #f4f4f4;
+}
 #main {
     overflow: auto;
 }
@@ -303,6 +306,9 @@ footer {
     #fixed-sidebar.affix {
         width: 262.5px!important;
     }
+    #first-row {
+      position: fixed;
+    }
 }
 @media only screen and (max-width: 1199px ) {
     #fixed-sidebar {
@@ -311,6 +317,9 @@ footer {
     #fixed-sidebar.affix {
         width: 212.5px!important;
     }
+    #first-row {
+      position: fixed;
+    }
 }
 /*Style the friend list part*/
 
@@ -318,6 +327,33 @@ footer {
     #right-sidebar {
         display: none;
     }
+    #first-row {
+      position: fixed;
+    }
+}
+@media  only screen and (max-width: 767px) {
+  #first-row {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+  }
+  #outer-container {
+    padding: 0;
+  }
+  #middle-news-container {
+    top: -15px;
+  }
+  .mobile-dropdown {
+    padding-top: 0!important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #middle-news-container {
+    top: 70px;
+  }
+  .mobile-dropdown {
+    padding-top: 10px;
+  }
 }
 
 #top-right,#bottom-right {
