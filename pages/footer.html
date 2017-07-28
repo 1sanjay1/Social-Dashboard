@@ -1,0 +1,37 @@
+
+<!--                            first comment        -->
+    <div ng-if="post.comment" ng-repeat="comment in post.comment" style="margin-top: 15px;">
+      <div class="media">
+        <div class="media-left">
+          <a href="#">
+            <img class="media-object comment-image" ng-src="{{comment.image}}" alt="...">
+          </a>
+        </div>
+        <div class="media-body">
+          <p class="comment"> <span><a href="#" class="name-color">{{comment.name}} </a></span> {{comment.statement}} </p>
+          <div>
+              <small>
+                  <span > <a href="#" class="name-color">Like </a></span> <span> <a href="#" class="name-color">Comment </a></span>
+              </small>
+          </div>
+        </div>
+      </div>
+
+      <div ng-if="comment.nestedComment" class="media nested-comment-1">
+        <div class="media-left">
+          <a href="#">
+            <img class="media-object comment-image" ng-src="{{comment.nestedComment.image}}" alt="...">
+          </a>
+        </div>
+        <div class="media-body">
+          <p class="comment"> <span><a href="#" class="name-color">{{comment.nestedComment.name}} </a></span> {{comment.nestedComment.statement}}</p>
+          <div>
+              <small>
+                  <span > <a href="#" class="name-color">Like </a></span> <span> <a href="#" class="name-color">Comment </a></span>
+              </small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <input placeholder="Write a comment..." class="add-comment">

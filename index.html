@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app='socilaDashBoard'>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,6 +16,12 @@
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
 
         <link href="css/main.css" rel="stylesheet">
+
+        <!-- AngularJS v1 file -->
+        <script type="text/javascript" src="js/angular.min.js"></script>
+
+        <!-- angularJs file for routing in AngularJS -->
+        <script src="https://code.angularjs.org/1.6.5/angular-route.js"></script>
 
     </head>
     <body>
@@ -178,102 +184,38 @@
 
                     <div class="hidden-xs col-sm-4 col-md-2"></div>
 
-                    <div class="col-xs-12 col-sm-8 col-md-5" style="padding-left: 0; padding-right: 0;">
-                        <div id="main">
+                    <div class="col-xs-12 col-sm-8 col-md-5" style="padding-left: 0; padding-right: 0;" ng-controller="mainController">
+                        <div id="main" ng-repeat="post in posts">
 
                         <!-- ---- First Post ( Text Post) --------------------------------- -->
-                        <div class="panel panel-default">
+                        <div ng-if="post.type1" class="panel panel-default">
                           <div class="panel-heading">
-                            <h3 class="panel-title"><img src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p160x160/14192003_1814925095393068_7427285130782567050_n.jpg?oh=0da31da3b089a6d05e3a212ca07275cc&oe=59D98161" class="post-image"><a href="https://www.facebook.com/sanjayyadav.raz.5" class="name-color">Sanjay Yadav</a></h3>
+                            <h3 class="panel-title"><img ng-src="{{post.image}}" class="post-image"><a href="https://www.facebook.com/sanjayyadav.raz.5" class="name-color">{{post.name}}</a></h3>
                           </div>
                           <div class="panel-body">
-                            <div><h3 class="text-post">Searching for a new laptop online is basically forcing your current computer to dig its own grave. </h3></div>
+                            <div><h3 class="text-post">{{post.text}} </h3></div>
                             <div class="icon-margin">
                                 <span><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span><a href="#" >Like</a></span>
                                 <span><span class="glyphicon glyphicon-comment" aria-hidden="true"></span><a href="#">Comment</a></span>
                                 <span><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span><a href="#">Share</a></span>
                             </div>
                           </div>
+
                           <div class="panel-footer">
-
-<!--                            first comment        -->
-                            <div class="media">
-                              <div class="media-left">
-                                <a href="#">
-                                  <img class="media-object comment-image" src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p100x100/11885393_797926940306426_4095247326765212349_n.jpg?oh=715136f7567d3e8e961d4c9b491fb96c&oe=5A0611DC" alt="...">
-                                </a>
-                              </div>
-                              <div class="media-body">
-                                <p class="comment"> <span><a href="#" class="name-color">Abhishek Verma </a></span> Wow, that's really insightful! </p>
-                                <div>
-                                    <small>
-                                        <span > <a href="#" class="name-color">Like </a></span> <span> <a href="#" class="name-color">Comment </a></span>
-                                    </small>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="media nested-comment-1">
-                              <div class="media-left">
-                                <a href="#">
-                                  <img class="media-object comment-image" src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p100x100/11885393_797926940306426_4095247326765212349_n.jpg?oh=715136f7567d3e8e961d4c9b491fb96c&oe=5A0611DC" alt="...">
-                                </a>
-                              </div>
-                              <div class="media-body">
-                                <p class="comment"> <span><a href="#" class="name-color">Abhishek Verma </a></span> Wow, that's really insightful! </p>
-                                <div>
-                                    <small>
-                                        <span > <a href="#" class="name-color">Like </a></span> <span> <a href="#" class="name-color">Comment </a></span>
-                                    </small>
-                                </div>
-                              </div>
-                            </div>
-
-<!--                            second comment-->
-                            <div class="media">
-                              <div class="media-left">
-                                <a href="#">
-                                  <img class="media-object comment-image" src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/c0.0.100.100/p100x100/19657138_756198377883136_4593537813376163139_n.jpg?oh=75f02f14b5cd97ce317a2d081a66fadd&oe=5A0E28BF" alt="...">
-                                </a>
-                              </div>
-                              <div class="media-body">
-                                <p class="comment"> <span><a href="#" class="name-color">Shubham Panwar </a></span> Wow, that's really insightful! </p>
-                                <div>
-                                    <small>
-                                        <span> <a href="#" class="name-color">Like </a></span> <span> <a href="#" class="name-color">Comment </a></span>
-                                    </small>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="media nested-comment-1">
-                              <div class="media-left">
-                                <a href="#">
-                                  <img class="media-object comment-image" src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p100x100/11885393_797926940306426_4095247326765212349_n.jpg?oh=715136f7567d3e8e961d4c9b491fb96c&oe=5A0611DC" alt="...">
-                                </a>
-                              </div>
-                              <div class="media-body">
-                                <p class="comment"> <span><a href="#" class="name-color">Abhishek Verma </a></span> Wow, that's really insightful! </p>
-                                <div>
-                                    <small>
-                                        <span > <a href="#" class="name-color">Like </a></span> <span> <a href="#" class="name-color">Comment </a></span>
-                                    </small>
-                                </div>
-                              </div>
-                            </div>
-                            <input placeholder="Write a comment..." class="add-comment">
+                            <div ng-view></div>
                           </div>
                         </div>
 
                         <!-- ---- Second Post (Quote Post) ---------------------------------- -->
-                        <div class="panel panel-default">
+                        <div ng-if="post.type2" class="panel panel-default">
                           <div class="panel-heading">
-                            <h3 class="panel-title"><img src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p100x100/11885393_797926940306426_4095247326765212349_n.jpg?oh=715136f7567d3e8e961d4c9b491fb96c&oe=5A0611DC" class="post-image"><a href="https://www.facebook.com/iamvermaabhishek" class="name-color">Abhishek Verma</a></h3>
+                            <h3 class="panel-title"><img ng-src="{{post.image}}" class="post-image"><a href="https://www.facebook.com/iamvermaabhishek" class="name-color">{{post.name}}</a></h3>
                           </div>
                           <div class="panel-body">
                             <div>
                                 <blockquote>
-                                  <p>All men who have turned out worth anything have had the chief hand in their own education.</p>
-                                  <footer>Walter Scott</footer>
+                                  <p>{{post.quote}}</p>
+                                  <footer>{{post.footer}}</footer>
                                 </blockquote>
                             </div>
                             <div class="icon-margin">
@@ -282,17 +224,19 @@
                                 <span><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span><a href="#">Share</a></span>
                             </div>
                           </div>
-                          <div class="panel-footer">Panel footer</div>
+                          <div class="panel-footer">
+                              <div ng-view></div>
+                          </div>
                         </div>
 
                         <!-- ----- Third Post  (Image Post) ------------------------------------ -->
-                        <div class="panel panel-default">
+                        <div ng-if="post.type3" class="panel panel-default">
                           <div class="panel-heading">
-                            <h3 class="panel-title"><img src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/c0.0.100.100/p100x100/19657138_756198377883136_4593537813376163139_n.jpg?oh=75f02f14b5cd97ce317a2d081a66fadd&oe=5A0E28BF" class="post-image"><a href="https://www.facebook.com/shubham.panwar.7311" class="name-color">Shubham Panwar</a></h3>
+                            <h3 class="panel-title"><img ng-src="{{post.image}}" class="post-image"><a href="https://www.facebook.com/shubham.panwar.7311" class="name-color">{{post.name}}</a></h3>
                           </div>
                           <div class="panel-body">
                             <div class="image-post">
-                                <img src="http://www.folomojo.com/wp-content/uploads/2015/02/16/104.jpg" class="img-responsive" alt="Responsive image">
+                                <img ng-src="{{post.post_image}}" class="img-responsive" alt="Responsive image">
                             </div>
                             <div class="icon-margin">
                                 <span><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span><a href="#">Like</a></span>
@@ -300,17 +244,19 @@
                                 <span><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span><a href="#">Share</a></span>
                             </div>
                           </div>
-                          <div class="panel-footer">Panel footer</div>
+                          <div class="panel-footer">
+                              <div ng-view></div>
+                          </div>
                         </div>
 
                         <!-- ------ Fourth Post (Video Post) ------------------------------- -->
-                        <div class="panel panel-default">
+                        <div ng-if="post.type4" class="panel panel-default">
                           <div class="panel-heading">
-                            <h3 class="panel-title"><img src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/c0.0.100.100/p100x100/19424285_1886970148219314_6363346683039267152_n.jpg?oh=05695c6e9ecf8639fd1bdeda060bd0c8&oe=59D7294C" class="post-image"><a href="https://www.facebook.com/search/top/?q=hakim%20shekhawat%20chevailier" class="name-color">Hakim Shekhawat</a></h3>
+                            <h3 class="panel-title"><img ng-src="{{post.image}}" class="post-image"><a href="https://www.facebook.com/search/top/?q=hakim%20shekhawat%20chevailier" class="name-color">{{post.name}}</a></h3>
                           </div>
                           <div class="panel-body">
                             <div class="embed-responsive embed-responsive-16by9" >
-                                <iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/jVIxe3YLNs8"></iframe>
+                                <iframe class="embed-responsive-item"  ng-src="https://www.youtube.com/embed/jVIxe3YLNs8"></iframe>
                             </div>
                             <div class="icon-margin">
                                 <span><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span><a href="#">Like</a></span>
@@ -318,11 +264,13 @@
                                 <span><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span><a href="#">Share</a></span>
                             </div>
                           </div>
-                          <div class="panel-footer">Panel footer</div>
+                          <div class="panel-footer">
+                             <div ng-view></div>
+                          </div>
                         </div>
 
                         <!-- ----- Fifth Post  (Image Post with text) ------------------------------------ -->
-                        <div class="panel panel-default">
+                        <div ng-if="type5" class="panel panel-default">
                           <div class="panel-heading">
                             <h3 class="panel-title"><img src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/c0.0.100.100/p100x100/19657138_756198377883136_4593537813376163139_n.jpg?oh=75f02f14b5cd97ce317a2d081a66fadd&oe=5A0E28BF" class="post-image"><a href="https://www.facebook.com/shubham.panwar.7311" class="name-color">Shubham Panwar</a></h3>
                           </div>
@@ -339,7 +287,9 @@
                                 <span><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span><a href="#">Share</a></span>
                             </div>
                           </div>
-                          <div class="panel-footer">Panel footer</div>
+                          <div class="panel-footer">
+                               <div ng-view></div>
+                          </div>
                         </div>
 
                     </div>
@@ -719,6 +669,8 @@
 
         <!-- Custom jQuery file -->
         <script type="text/javascript" src="js/custom-jQuery.js"></script>
+
+        <script type="text/javascript" src="js/dataBase.js"></script>
 
     </body>
 </html>
