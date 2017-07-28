@@ -24,6 +24,7 @@
         <script src="https://code.angularjs.org/1.6.5/angular-route.js"></script>
 
     </head>
+
     <body>
 
         <div class="container-fluid" id="outer-container">
@@ -288,7 +289,9 @@
                             </div>
                           </div>
                           <div class="panel-footer">
-                               <div ng-view></div>
+                            <div>
+                              <h3 class="text-post">{{post.text}} </h3>
+                            </div>
                           </div>
                         </div>
 
@@ -566,7 +569,7 @@
             </div>
             <!-- End row of main container -->
 
-        </div>
+            </div>
     <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- Endinf of main content ---------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
             <!-- ------------------------------------ starting of footer ---------------------------------------------- -->
@@ -596,52 +599,11 @@
                   <div><img src="https://lh3.googleusercontent.com/psU4fYh6zfjhgEZnK-RpAwj504ZS2NHi9ofUocktf_uDNveB6bc-8Y5HdMGvN1MA7w=h900" class="img img-responsive"></div>
                 </div>
 
-                <div id="middle-right">
+                <div id="middle-right" ng-controller="chatController">
 
                   <ul class="nav nav-pills nav-stacked">
-                    <li role="presentation"><a href="#"><span><img class="friend-image" src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p100x100/11885393_797926940306426_4095247326765212349_n.jpg?oh=715136f7567d3e8e961d4c9b491fb96c&oe=5A0611DC"></span>Abhishek Verma</a><span class="green"></span></li>
 
-                    <li role="presentation"><a href="#"><span><img class="friend-image" src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/c0.0.100.100/p100x100/19657138_756198377883136_4593537813376163139_n.jpg?oh=75f02f14b5cd97ce317a2d081a66fadd&oe=5A0E28BF"></span>Shubham Panwar</a><span class="green"></span></li>
-
-                    <li role="presentation"><a href="#"><span><img class="friend-image" src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p100x100/11885393_797926940306426_4095247326765212349_n.jpg?oh=715136f7567d3e8e961d4c9b491fb96c&oe=5A0611DC"></span>Abhishek Verma</a><span class="green"></span></li>
-
-                    <li role="presentation"><a href="#"><span><img class="friend-image" src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/c0.0.100.100/p100x100/19657138_756198377883136_4593537813376163139_n.jpg?oh=75f02f14b5cd97ce317a2d081a66fadd&oe=5A0E28BF"></span>Shubham Panwar</a><span class="green"></span></li>
-
-                    <li role="presentation"><a href="#"><span><img class="friend-image" src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p100x100/11885393_797926940306426_4095247326765212349_n.jpg?oh=715136f7567d3e8e961d4c9b491fb96c&oe=5A0611DC"></span>Abhishek Verma</a><span class="green"></span></li>
-
-                    <li role="presentation"><a href="#"><span><img class="friend-image" src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/c0.0.100.100/p100x100/19657138_756198377883136_4593537813376163139_n.jpg?oh=75f02f14b5cd97ce317a2d081a66fadd&oe=5A0E28BF"></span>Shubham Panwar</a><span class="green"></span></li>
-
-                    <li role="presentation"><a href="#"><span><img class="friend-image" src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p100x100/11885393_797926940306426_4095247326765212349_n.jpg?oh=715136f7567d3e8e961d4c9b491fb96c&oe=5A0611DC"></span>Abhishek Verma</a><span class="green"></span></li>
-
-                    <li role="presentation"><a href="#"><span><img class="friend-image" src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/c0.0.100.100/p100x100/19657138_756198377883136_4593537813376163139_n.jpg?oh=75f02f14b5cd97ce317a2d081a66fadd&oe=5A0E28BF"></span>Shubham Panwar</a><span class="green"></span></li>
-
-                    <li role="presentation"><a href="#"><span><img class="friend-image" src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p100x100/11885393_797926940306426_4095247326765212349_n.jpg?oh=715136f7567d3e8e961d4c9b491fb96c&oe=5A0611DC"></span>Abhishek Verma</a><span class="green"></span></li>
-
-                    <li role="presentation"><a href="#"><span><img class="friend-image" src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/c0.0.100.100/p100x100/19657138_756198377883136_4593537813376163139_n.jpg?oh=75f02f14b5cd97ce317a2d081a66fadd&oe=5A0E28BF"></span>Shubham Panwar</a><span class="green"></span></li>
-
-                    <li role="presentation"><a href="#"><span><img class="friend-image" src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p100x100/11885393_797926940306426_4095247326765212349_n.jpg?oh=715136f7567d3e8e961d4c9b491fb96c&oe=5A0611DC"></span>Abhishek Verma</a><span class="green"></span></li>
-
-                    <li role="presentation"><a href="#"><span><img class="friend-image" src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/c0.0.100.100/p100x100/19657138_756198377883136_4593537813376163139_n.jpg?oh=75f02f14b5cd97ce317a2d081a66fadd&oe=5A0E28BF"></span>Shubham Panwar</a><span class="green"></span></li>
-
-                    <li role="presentation"><a href="#"><span><img class="friend-image" src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p100x100/11885393_797926940306426_4095247326765212349_n.jpg?oh=715136f7567d3e8e961d4c9b491fb96c&oe=5A0611DC"></span>Abhishek Verma</a><span class="green"></span></li>
-
-                    <li role="presentation"><a href="#"><span><img class="friend-image" src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/c0.0.100.100/p100x100/19657138_756198377883136_4593537813376163139_n.jpg?oh=75f02f14b5cd97ce317a2d081a66fadd&oe=5A0E28BF"></span>Shubham Panwar</a><span class="green"></span></li>
-
-                    <li role="presentation"><a href="#"><span><img class="friend-image" src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p100x100/11885393_797926940306426_4095247326765212349_n.jpg?oh=715136f7567d3e8e961d4c9b491fb96c&oe=5A0611DC"></span>Abhishek Verma</a><span class="green"></span></li>
-
-                    <li role="presentation"><a href="#"><span><img class="friend-image" src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/c0.0.100.100/p100x100/19657138_756198377883136_4593537813376163139_n.jpg?oh=75f02f14b5cd97ce317a2d081a66fadd&oe=5A0E28BF"></span>Shubham Panwar</a><span class="green"></span></li>
-
-                    <li role="presentation"><a href="#"><span><img class="friend-image" src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p100x100/11885393_797926940306426_4095247326765212349_n.jpg?oh=715136f7567d3e8e961d4c9b491fb96c&oe=5A0611DC"></span>Abhishek Verma</a><span class="green"></span></li>
-
-                    <li role="presentation"><a href="#"><span><img class="friend-image" src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/c0.0.100.100/p100x100/19657138_756198377883136_4593537813376163139_n.jpg?oh=75f02f14b5cd97ce317a2d081a66fadd&oe=5A0E28BF"></span>Shubham Panwar</a><span class="green"></span></li>
-
-                    <li role="presentation"><a href="#"><span><img class="friend-image" src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p100x100/11885393_797926940306426_4095247326765212349_n.jpg?oh=715136f7567d3e8e961d4c9b491fb96c&oe=5A0611DC"></span>Abhishek Verma</a><span class="green"></span></li>
-
-                    <li role="presentation"><a href="#"><span><img class="friend-image" src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/c0.0.100.100/p100x100/19657138_756198377883136_4593537813376163139_n.jpg?oh=75f02f14b5cd97ce317a2d081a66fadd&oe=5A0E28BF"></span>Shubham Panwar</a><span class="green"></span></li>
-
-                    <li role="presentation"><a href="#"><span><img class="friend-image" src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p100x100/11885393_797926940306426_4095247326765212349_n.jpg?oh=715136f7567d3e8e961d4c9b491fb96c&oe=5A0611DC"></span>Abhishek Verma</a><span class="green"></span></li>
-
-                    <li role="presentation"><a href="#"><span><img class="friend-image" src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/c0.0.100.100/p100x100/19657138_756198377883136_4593537813376163139_n.jpg?oh=75f02f14b5cd97ce317a2d081a66fadd&oe=5A0E28BF"></span>Shubham Panwar</a><span class=""></span></li>
+                    <li ng-repeat="friend in friendList | filter:searchFriend" role="presentation"><a href="#"><span><img class="friend-image" ng-src="{{friend.image}}"></span>{{friend.name}}</a><span class="green"></span></li>
 
                   </ul>
 
@@ -649,9 +611,10 @@
 
                 <!-- search box to search a friend -->
                 <div id="bottom-right">
-                  <input type="text" name="">
+                  <input type="text" name="" ng-model="searchFriend">
                 </div>
             </div>
+            <!-- Ending of right-sidebar -->
 
         </div>
         <!-- Ending of Bootstap container -->

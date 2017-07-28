@@ -2,7 +2,6 @@ var socilaDashBoard = angular.module('socilaDashBoard',['ngRoute']);
 
 
 // routing of footer in each post
-
 socilaDashBoard.config(function ($routeProvider) {
 
 	$routeProvider
@@ -77,7 +76,7 @@ socilaDashBoard.controller('mainController',function($scope) {
     },
     {
         type3: 'image post',
-        name: 'I am third post',
+        name: 'Shubham Panwar',
         image: 'https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/c0.0.100.100/p100x100/19657138_756198377883136_4593537813376163139_n.jpg?oh=75f02f14b5cd97ce317a2d081a66fadd&oe=5A0E28BF',
         post_image: 'http://www.folomojo.com/wp-content/uploads/2015/02/16/104.jpg',
         comment:
@@ -125,5 +124,105 @@ socilaDashBoard.controller('mainController',function($scope) {
   ];
 
   $scope.posts = posts;
+
+})
+
+
+socilaDashBoard.controller('chatController',function($scope) {
+
+  var online = [
+
+    {
+      name: 'Abhishek Verma',
+      image: 'https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p100x100/11885393_797926940306426_4095247326765212349_n.jpg?oh=715136f7567d3e8e961d4c9b491fb96c&oe=5A0611DC'
+    },
+    {
+      name: 'Shubham Panwar',
+      image: 'https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/c0.0.100.100/p100x100/19657138_756198377883136_4593537813376163139_n.jpg?oh=75f02f14b5cd97ce317a2d081a66fadd&oe=5A0E28BF'
+    },
+    {
+      name: 'Abhishek Verma',
+      image: 'https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p100x100/11885393_797926940306426_4095247326765212349_n.jpg?oh=715136f7567d3e8e961d4c9b491fb96c&oe=5A0611DC'
+    },
+    {
+      name: 'Shubham Panwar',
+      image: 'https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/c0.0.100.100/p100x100/19657138_756198377883136_4593537813376163139_n.jpg?oh=75f02f14b5cd97ce317a2d081a66fadd&oe=5A0E28BF'
+    },
+    {
+      name: 'Abhishek Verma',
+      image: 'https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p100x100/11885393_797926940306426_4095247326765212349_n.jpg?oh=715136f7567d3e8e961d4c9b491fb96c&oe=5A0611DC'
+    },
+    {
+      name: 'Shubham Panwar',
+      image: 'https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/c0.0.100.100/p100x100/19657138_756198377883136_4593537813376163139_n.jpg?oh=75f02f14b5cd97ce317a2d081a66fadd&oe=5A0E28BF'
+    },
+    {
+      name: 'Abhishek Verma',
+      image: 'https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p100x100/11885393_797926940306426_4095247326765212349_n.jpg?oh=715136f7567d3e8e961d4c9b491fb96c&oe=5A0611DC'
+    },
+    {
+      name: 'Shubham Panwar',
+      image: 'https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/c0.0.100.100/p100x100/19657138_756198377883136_4593537813376163139_n.jpg?oh=75f02f14b5cd97ce317a2d081a66fadd&oe=5A0E28BF'
+    },
+    {
+      name: 'Abhishek Verma',
+      image: 'https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p100x100/11885393_797926940306426_4095247326765212349_n.jpg?oh=715136f7567d3e8e961d4c9b491fb96c&oe=5A0611DC'
+    },
+    {
+      name: 'Shubham Panwar',
+      image: 'https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/c0.0.100.100/p100x100/19657138_756198377883136_4593537813376163139_n.jpg?oh=75f02f14b5cd97ce317a2d081a66fadd&oe=5A0E28BF'
+    },
+    {
+      name: 'Abhishek Verma',
+      image: 'https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p100x100/11885393_797926940306426_4095247326765212349_n.jpg?oh=715136f7567d3e8e961d4c9b491fb96c&oe=5A0611DC'
+    },
+    {
+      name: 'Shubham Panwar',
+      image: 'https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/c0.0.100.100/p100x100/19657138_756198377883136_4593537813376163139_n.jpg?oh=75f02f14b5cd97ce317a2d081a66fadd&oe=5A0E28BF'
+    },
+    {
+      name: 'Abhishek Verma',
+      image: 'https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p100x100/11885393_797926940306426_4095247326765212349_n.jpg?oh=715136f7567d3e8e961d4c9b491fb96c&oe=5A0611DC'
+    },
+    {
+      name: 'Shubham Panwar',
+      image: 'https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/c0.0.100.100/p100x100/19657138_756198377883136_4593537813376163139_n.jpg?oh=75f02f14b5cd97ce317a2d081a66fadd&oe=5A0E28BF'
+    },
+    {
+      name: 'Abhishek Verma',
+      image: 'https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p100x100/11885393_797926940306426_4095247326765212349_n.jpg?oh=715136f7567d3e8e961d4c9b491fb96c&oe=5A0611DC'
+    },
+    {
+      name: 'Shubham Panwar',
+      image: 'https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/c0.0.100.100/p100x100/19657138_756198377883136_4593537813376163139_n.jpg?oh=75f02f14b5cd97ce317a2d081a66fadd&oe=5A0E28BF'
+    },
+    {
+      name: 'Abhishek Verma',
+      image: 'https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p100x100/11885393_797926940306426_4095247326765212349_n.jpg?oh=715136f7567d3e8e961d4c9b491fb96c&oe=5A0611DC'
+    },
+    {
+      name: 'Shubham Panwar',
+      image: 'https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/c0.0.100.100/p100x100/19657138_756198377883136_4593537813376163139_n.jpg?oh=75f02f14b5cd97ce317a2d081a66fadd&oe=5A0E28BF'
+    },
+    {
+      name: 'Abhishek Verma',
+      image: 'https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p100x100/11885393_797926940306426_4095247326765212349_n.jpg?oh=715136f7567d3e8e961d4c9b491fb96c&oe=5A0611DC'
+    },
+    {
+      name: 'Shubham Panwar',
+      image: 'https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/c0.0.100.100/p100x100/19657138_756198377883136_4593537813376163139_n.jpg?oh=75f02f14b5cd97ce317a2d081a66fadd&oe=5A0E28BF'
+    },
+    {
+      name: 'Abhishek Verma',
+      image: 'https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p100x100/11885393_797926940306426_4095247326765212349_n.jpg?oh=715136f7567d3e8e961d4c9b491fb96c&oe=5A0611DC'
+    },
+    {
+      name: 'Shubham Panwar',
+      image: 'https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/c0.0.100.100/p100x100/19657138_756198377883136_4593537813376163139_n.jpg?oh=75f02f14b5cd97ce317a2d081a66fadd&oe=5A0E28BF'
+    }
+
+  ];
+
+  $scope.friendList = online;
 
 })
