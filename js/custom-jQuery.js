@@ -109,3 +109,9 @@ $("#click-dropdown span.caret").on('click', function(){
     i++;
   });
 });
+
+
+
+// $('input[placeholder="What\'s on your mind?"]').on('focus',function() {
+// 	$(this).css('border','0');
+// });

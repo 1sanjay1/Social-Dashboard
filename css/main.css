@@ -36,6 +36,49 @@ footer {
     border-radius: 0;
 }
 
+/*top fix post decoration*/
+#topPost .panel-heading {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+  #topPost .panel-heading span {
+      margin: 5px;
+      font-size: 12px;
+  }
+  #topPost .panel-heading div div {
+      border-right: 1px solid #90949c;
+  }
+  #topPost .panel-heading div:last-child {
+     border: 0;
+  }
+  #topPost .panel-heading {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  #topPost .panel-heading a,
+  #topPost .panel-body a {
+    text-decoration: none;
+  }
+  #topPost .topPostIcon span,
+  #topPost .topPostIcon i {
+    font-size: 18px;
+    color: orange;
+    margin-right: 7px;
+  }
+  #topPost .panel-body .icon-margin div.topPostIcon{
+    display: flex;
+    border-radius: 15px;
+    background: #f4f4f4;
+    margin: 12px;
+  }
+
+  #topPost .panel-body input:focus{
+    outline: none;
+ }
+
+/*end of top fix post decoration*/
+
 .white-text {
   color: white !important;
 }
