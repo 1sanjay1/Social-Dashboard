@@ -76,6 +76,15 @@ footer {
   #topPost .panel-body input:focus{
     outline: none;
  }
+ @media only screen and (max-width: 394px) {
+   #post-icon {
+     display: none!important;
+   }
+ }
+ #post-icon {
+   position: absolute;
+   right: 0;
+ }
 
 /*end of top fix post decoration*/
 
