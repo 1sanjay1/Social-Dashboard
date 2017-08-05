@@ -84,6 +84,7 @@ footer {
  #post-icon {
    position: absolute;
    right: 0;
+   /*bottom: 2px;*/
  }
 
 /*end of top fix post decoration*/
