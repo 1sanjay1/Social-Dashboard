@@ -115,3 +115,6 @@ $("#click-dropdown span.caret").on('click', function(){
 // $('input[placeholder="What\'s on your mind?"]').on('focus',function() {
 // 	$(this).css('border','0');
 // });
+
+
+//show comment section by clicking

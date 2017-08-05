@@ -80,6 +80,13 @@ footer {
    /*#post-icon {
      display: none!important;
    }*/
+   #topPost .panel-body .icon-margin div.topPostIcon{
+     display: flex;
+     border-radius: 15px;
+     background: #f4f4f4;
+     margin: 12px 5px 12px 0px;
+
+   }
  }
  #post-icon {
    position: absolute;
