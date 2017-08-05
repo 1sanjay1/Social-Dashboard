@@ -77,9 +77,9 @@ footer {
     outline: none;
  }
  @media only screen and (max-width: 394px) {
-   #post-icon {
+   /*#post-icon {
      display: none!important;
-   }
+   }*/
  }
  #post-icon {
    position: absolute;
