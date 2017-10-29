@@ -30,7 +30,7 @@ socilaDashBoard.controller('mainController',function($scope) {
     {
         type1: 'text post',
         name: 'Sanjay Yadav',
-        image: 'https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p160x160/14192003_1814925095393068_7427285130782567050_n.jpg?oh=0da31da3b089a6d05e3a212ca07275cc&oe=59D98161',
+        image: 'https://fb-s-d-a.akamaihd.net/h-ak-fbx/v/t1.0-1/p160x160/14192003_1814925095393068_7427285130782567050_n.jpg?oh=1dfc67cd3bf6143492dc5c20715a6278&oe=5A77B561&__gda__=1517882575_42905b2ceab34ff1c45e1dcb1671a70e',
         text: 'Searching for a new laptop online is basically forcing your current computer to dig its own grave.',
         comment:
         [        {
@@ -68,7 +68,7 @@ socilaDashBoard.controller('mainController',function($scope) {
                     statement: 'i am a disco dancer',
                     nestedComment: {
                       name: 'Sanjay Raz',
-                      image: 'https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p160x160/14192003_1814925095393068_7427285130782567050_n.jpg?oh=0da31da3b089a6d05e3a212ca07275cc&oe=59D98161',
+                      image: 'https://fb-s-d-a.akamaihd.net/h-ak-fbx/v/t1.0-1/p160x160/14192003_1814925095393068_7427285130782567050_n.jpg?oh=1dfc67cd3bf6143492dc5c20715a6278&oe=5A77B561&__gda__=1517882575_42905b2ceab34ff1c45e1dcb1671a70e',
                       statement: 'hey! Abhishek, how are you baby'
                     }
                   }
@@ -114,7 +114,7 @@ socilaDashBoard.controller('mainController',function($scope) {
                     statement: 'i am a disco dancer',
                     nestedComment: {
                       name: 'Sanjay Raz',
-                      image: 'https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p160x160/14192003_1814925095393068_7427285130782567050_n.jpg?oh=0da31da3b089a6d05e3a212ca07275cc&oe=59D98161',
+                      image: 'https://fb-s-d-a.akamaihd.net/h-ak-fbx/v/t1.0-1/p160x160/14192003_1814925095393068_7427285130782567050_n.jpg?oh=1dfc67cd3bf6143492dc5c20715a6278&oe=5A77B561&__gda__=1517882575_42905b2ceab34ff1c45e1dcb1671a70e',
                       statement: 'hey! Abhishek, how are you baby'
                     }
                   }
